@@ -83,6 +83,20 @@
       "url": "https://www.youtube.com/embed/IGFSiBJIXFQ",
       "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
       "id": 12
+    },
+    {
+      "titulo": "Curso de Ciência da Computação",
+      "descricao": "25 mil visualizações",
+      "url": "https://www.youtube.com/embed/Kkg1cjVoYq4",
+      "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
+      "id": 13
+    },
+    {
+      "titulo": "CURSO de Sistemas de Informação | ",
+      "descricao": "6 mil visualizações",
+      "url": "https://www.youtube.com/embed/watch?v=997TdPpcajo",
+      "imagem": "https://play-lh.googleusercontent.com/yDjaHCaOn_O89vnY7eOKH6ElEBtJrmN2CSI4yhiP1_GVC2zrxXWSFGxO0lt9-CU0mV4=w240-h480-rw",
+      "id": 14
     }
   ]
 }
