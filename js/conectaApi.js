@@ -3,7 +3,6 @@ async function listaVideos() {
 	const conexaoConvertida = await conexao.json();
 
 	return conexaoConvertida;
-
 }
 
 async function criaVideo(titulo, descricao, url, imagem) {
@@ -19,7 +18,9 @@ async function criaVideo(titulo, descricao, url, imagem) {
 			imagem: imagem
 		})
 	});
-
+	if(!conexao.ok){
+		throw new Error("Não foi possível enviar o vídeo")
+	}
 	const conexaoConvertida = await conexao.json();
 	return conexaoConvertida;
 }

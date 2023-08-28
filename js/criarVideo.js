@@ -1,7 +1,6 @@
 import { conectaApi } from "./conectaApi.js";
 const formulario = document.querySelector("[data-formulario]");
 
-
 async function criarVideo(evento) {
 	evento.preventDefault();
 
@@ -9,11 +8,14 @@ async function criarVideo(evento) {
 	const url = document.querySelector("[data-url]").value;
 	const titulo = document.querySelector("[data-titulo]").value;
 	const descricao = Math.floor(Math.random() * 10).toString();
-
+	try{
 	await conectaApi.criaVideo(titulo, descricao, url, imagem); // não pode mudar a ordem dos parâmetros
 
 	window.location.href = "../pages/envio-concluido.html";
-	console.log('criou o video', criarVideo);
+	} catch (e) {
+		alert(e);
+	}
+	// console.log('criou o video', criarVideo);
 }
 
 formulario.addEventListener("submit", evento => criarVideo(evento))
